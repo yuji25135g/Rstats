@@ -1,3 +1,10 @@
 ## R Markdown
 設定URL↓↓↓  
 [Support Mark Down](https://github.com/REditorSupport/vscode-R/wiki/R-Markdown)
+
+```{r}
+score <- read.table("./csv/Math&Phys.csv", header = TRUE, sep = ",")
+
+hist(score$phys)
+plot(score$math, score$phys)
+```
